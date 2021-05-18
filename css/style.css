@@ -1,0 +1,277 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+:root{
+    --clr-strong-cyan: hsl(171, 66%, 44%);
+    --clr-light-blue: hsl(233, 100%, 69%);
+    --clr-dark-grayish-blue: hsl(210, 10%, 33%);
+    --clr-grayish-blue: hsl(201, 11%, 66%);
+    --clr-neutral-whited: hsl(255, 100%, 100%);
+}
+
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+    background: url(../images/bg-header-desktop.png) no-repeat;
+}
+
+h2, h1{
+    margin: .6rem;
+    padding: 1.1rem;
+}
+
+p{
+    padding: 1.2rem;
+    color: var(--clr-dark-grayish-blue);
+}
+
+.universal-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn-ios, .btn-mac{
+    text-decoration: none;
+    margin: .5rem 0;
+    padding: .6rem 5rem;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 1px 1px 5px black;
+}
+
+.btn-ios{
+    background-color: var(--clr-strong-cyan);
+}
+
+.btn-mac{
+    background-color: var(--clr-light-blue);
+}
+
+.big-img{
+    height: 230px;
+    margin: 2rem 0;
+}
+    
+/* ************************Header Section Starts**************** */
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding: 2rem;
+}
+
+#copy-logo{
+    height: 100px;
+    width: 100px;
+    margin: 2rem;
+}
+
+.header-btn{
+    display: flex;
+    flex-direction: column;
+}
+
+/* ************************Header Section Ends**************** */
+
+/* ****************************Middle Section Starts************* */
+
+.middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.mid-track{
+    margin: 1.5rem;
+}
+
+.info{
+    margin: 1.2rem;
+}
+
+/* ****************************Middle Section Ends************* */
+
+/* ******************************Lower Mid Section Starts************* */
+.lower-mid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.small-text{
+    margin: 2rem 0;
+}
+
+.lower-mid h2{
+    margin: 0;
+    padding: 0;
+}
+
+/* ******************************Lower Mid Section Ends************* */
+
+/* *******************************Sponsors Section Starts************** */
+
+.sponsors{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sponsor-img{
+    width: 30%;
+    margin: 1.5rem;
+}
+
+/* *******************************Sponsors Section Ends************** */
+
+/* ***********************************Clipboard Section Starts************************************* */
+
+.clipboard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* ***********************************Clipboard Section Ends************************************* */
+
+/* ********************************Footer Section Starts******************************** */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-grayish-blue);
+    list-style: none;
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem 0 0 0;
+}
+
+#footer-img{
+    height: 60px;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--clr-dark-grayish-blue);
+    margin: 1.5rem;
+}
+
+.footer-link{
+    display: flex;
+    flex-direction: column;
+}
+
+/* ********************************Footer Section Ends******************************** */
+
+@media screen and (min-width:800px) {
+
+    .big-img{
+        height: 60%;
+    }
+
+    .btn-ios, .btn-mac{
+        margin: .6rem;
+        padding:  1rem 3rem;
+    }
+   
+/* ************************Header Section Starts**************** */
+
+.universal-btn{
+    flex-direction: row;
+    margin: 2rem;
+}
+
+/* ************************Header Section Ends**************** */
+
+/* ****************************Middle Section Starts************* */
+
+.mid-text{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.mid-info{
+    text-align: justify;
+}
+
+.mid-info h2, p{
+    margin-left: 0;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+}
+/* ****************************Middle Section Ends************* */
+
+/* ******************************Lower Mid Section Starts************* */
+
+.card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: auto;
+    margin: 0 2rem;
+}
+
+.small-text{
+    padding: 2rem;
+}
+
+/* ******************************Lower Mid Section Ends************* */
+
+/* *******************************Sponsors Section Starts************** */
+
+.sponsors{
+    margin: 2rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.sponsor-img{
+    height: 60px;
+    width: 10%;
+}
+
+/* *******************************Sponsors Section Ends************** */
+
+/* ********************************Footer Section Starts******************************** */
+
+/* footer{
+    height: 2%;
+    flex-direction: row;
+    justify-content: space-evenly;
+} */
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    place-items: center;
+}
+
+.footer-link{
+    display: flex;
+    flex-direction: row;
+}
+
+.bottom{
+    color: var(--clr-dark-grayish-blue);
+}
+
+.bottom i{
+    margin: .5rem;
+}
+
+/* ********************************Footer Section Ends******************************** */
+}
